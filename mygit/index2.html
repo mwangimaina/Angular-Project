@@ -1,0 +1,141 @@
+<HTML>
+<HEAD>
+<SCRIPT>
+
+
+function arrayanalyzer(){
+  
+var countneg =0;
+var odd =0;
+var average = 0;
+for(i=0;i<arguments.length;i++)
+{
+if(arguments[i]<0){
+countneg++;
+}
+
+if(arguments[i]%2==0){
+odd++;
+}
+
+//average
+average+=arguments[i];
+
+
+}
+var faverage=average/3;
+alert("Negative No: "+countneg+" Odd"+odd+" Odd"+faverage.toFixed(2));
+
+var answer= new Object();
+answer.neg = countneg;
+answer.odd = odd;
+answer.avg =faverage;
+alert(JSON.stringify(answer,null,4));
+
+
+
+
+
+}
+var x = arrayanalyzer(-4, 5,-6, 7, 4, 9);
+alert(x);
+
+
+
+
+
+
+
+function Reverseing(){
+
+var string = "This is fun hopefully";
+// you can split, reverse, join " " first and then "" too
+var x =string.split("").reverse().join("").split(" ").reverse().join(" ")
+alert(x);
+}
+
+
+
+
+
+function SwapCases(input) {
+
+var arr = input.split("");
+
+alert(arr);
+
+for (var i = 0; i <= arr.length-1; i++)
+{
+if (arr[i].toUpperCase() != arr[i]) {
+arr[i]= arr[i].toUpperCase() ;
+}
+
+else {
+arr[i] = arr[i].toLowerCase();
+}
+}
+var arrjoined= arr.join("");
+alert(arrjoined);
+
+}
+
+SwapCases("The CounTry is minE");
+
+
+
+
+
+function countWords(str){
+   var count = 0;
+   var spaces =0;
+   var chars=0;
+   str  =  "Hereis the game";
+   var words = str.split(" ");
+    for (i=0 ; i < words.length ; i++){
+       // inner loop -- do the count
+       if (words[i] != "")
+          count += 1;
+          chars = chars + words[i].length;
+
+       if (words[i] == "")
+          spaces += 1;
+
+    }
+
+    rspaces= spaces + count-1;
+
+   document.theForm.results.value =
+      "There are " +
+      count +
+      " words in the text string you entered! Space Nazo: "+rspaces+" Chars"+chars;
+
+
+
+var myCar = new Object();
+myCar.names = count;
+myCar.spaces = rspaces;
+myCar.characters = chars;
+
+alert(JSON.stringify(myCar,null,4));
+
+}
+
+
+
+
+</SCRIPT>
+</HEAD>
+<BODY>
+<FORM name="theForm">
+Enter a text string:
+<TEXTAREA name=inStr rows=5 cols=90>
+</TEXTAREA>
+<INPUT type=button value="Count Words" onClick="Reverseing()";>
+<INPUT type=button name="theButton" value="Clear Results" onClick='document.theForm.results.value=""';>
+Results<br>
+<TEXTAREA name=results rows=5 cols=90>
+</TEXTAREA>
+
+</FORM>
+</BODY>
+</HTML>

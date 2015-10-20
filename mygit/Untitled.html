@@ -1,0 +1,64 @@
+<html>
+<head>
+<script>
+
+
+function yy()
+{
+var arr = [];
+arr.push(1);
+arr.push(2);
+arr.push(7);
+
+document.write(arr.pop());
+}
+
+function asd()
+{
+var personobject = {name:"Joseph",age:"45",id:789000};
+
+personobject.phone = 0734343434;
+personobject["tel"]=45555;
+//document.write(JSON.stringify(personobject,null));
+
+}
+
+var boundPrintName = ffff().call(personobject);
+boundPrintName();    // prints out "John
+function ffff(){
+
+  document.write(this.age);
+}
+
+
+
+
+
+
+var oldColor;
+  function changeColor() {
+    oldColor = document.body.style.backgroundColor;
+    var newColor = prompt('Enter a color:');
+    document.body.style.backgroundColor = newColor;
+  }
+
+  function undoColor() {
+    var newColor = oldColor;
+    //oldColor = document.body.style.backgroundColor;
+    document.body.style.backgroundColor = newColor;
+
+}
+
+
+
+
+</script>
+</head>
+<body>
+  <button onclick='changeColor()'>Change color</button>
+  <button onclick='undoColor()'>Undo color</button>
+
+</body>
+
+
+</html>

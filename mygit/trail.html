@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>mine</title>
+<script type="text/javascript">
+
+//Reverseing();
+function Reverseing(){
+
+var string = "This is fun hopefully";
+// you can split, reverse, join " " first and then "" too
+var x =string.split("").reverse().join("").split(" ").reverse().join(" ")
+alert(x);
+}
+
+
+function NewMe()
+{
+
+for(var i=0;i<arguments.length;i++)
+{
+
+if(arguments[i]<0){
+
+  alert("Its Negative");
+}
+
+}
+
+alert(x);
+
+
+
+
+}
+NewMe(-4,-5,7);
+
+
+
+function UpperLower(str)
+{
+
+var x  = str.split("");
+
+for(var i=0; i < str.length; i++)
+{
+  if (x[i].toLowerCase() != x[i]) {
+
+      x[i] = x[i].toLowerCase();
+
+}
+
+else {
+  x[i] = x[i].toUpperCase();
+}
+}
+
+var arrjoined= x.join("");
+alert(arrjoined);
+}
+
+
+</script>
+
+
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

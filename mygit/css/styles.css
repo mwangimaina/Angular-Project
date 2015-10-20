@@ -1,0 +1,47 @@
+.important {
+    font-weight: bold;
+    font-family: serif;
+}
+
+.blue {
+    color: blue;
+}
+
+
+.blue {
+	background: red;
+}
+
+
+.x {
+	background: green;
+}
+/**/
+#header {
+background:#B3E5FC;
+height: 100px;
+}
+
+#left {
+background:#4DB6AC;
+height: 600px;
+width: 300px;
+float: left;
+}
+
+#right {
+background:#FFC107;
+height: 600px;
+}
+
+#footer {
+background:#FF6E40;
+height: 20px;
+}
+
+#container {
+		width:1000px;
+		margin:0px auto;
+		border:1px solid #bbb;
+
+	}
