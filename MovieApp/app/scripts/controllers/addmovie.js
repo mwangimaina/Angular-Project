@@ -8,8 +8,12 @@
  * Controller of the movieappApp
  */
 angular.module('movieappApp')
+<<<<<<< HEAD
   .controller('AddmovieCtrl', function ($scope,MyFactory) {
 
+=======
+  .controller('AddmovieCtrl', function ($scope,MyFactory,$location) {
+>>>>>>> 0ccd1fdaa6b4dab69207339d90dbfca8f047cd66
        $scope.movies = new MyFactory();
   	     $scope.saveMovie = function() {
   	          //create a new resource using your 'movie' Object

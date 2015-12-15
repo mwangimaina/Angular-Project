@@ -19,8 +19,11 @@ angular
     'ngSanitize',
     'ngTouch'
   ])
+<<<<<<< HEAD
 
   
+=======
+>>>>>>> 0ccd1fdaa6b4dab69207339d90dbfca8f047cd66
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
@@ -29,7 +32,11 @@ angular
         controllerAs: 'main'
       
       })
+<<<<<<< HEAD
       .when('/about/:_id', {
+=======
+      .when('/about', {
+>>>>>>> 0ccd1fdaa6b4dab69207339d90dbfca8f047cd66
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl',
         controllerAs: 'about'
@@ -45,6 +52,7 @@ angular
         controller: 'AddmovieCtrl',
         controllerAs: 'addMovie'
       })
+<<<<<<< HEAD
       .when('/editMovie/:_id', {
         templateUrl: 'views/editmovie.html',
         controller: 'EditmovieCtrl',
@@ -55,6 +63,8 @@ angular
       //   controller: 'UserloginCtrl',
       //   controllerAs: 'userLogin'
       // })
+=======
+>>>>>>> 0ccd1fdaa6b4dab69207339d90dbfca8f047cd66
       .otherwise({
         redirectTo: '/'
       });
