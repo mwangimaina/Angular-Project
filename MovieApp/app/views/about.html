@@ -1,0 +1,40 @@
+<p>This is the addMovie view.</p>
+
+{{movies}}
+<div class ="col-sm-8">
+<form ng-submit="saveMovie()">
+    <div class ="form-group">
+     <label for = "title">Enter Movie Title</label>
+     <input type = "text" ng-model ="moviedetails._id" id ="title"
+     class="form-control"/>
+    </div>
+    
+    <div class ="form-group">
+     <label for = "year">Enter Movie Year</label>
+     <input type = "text" ng-model ="moviedetails.year_of_release" id ="year" class="form-control"/>
+    </div>
+
+     <div class ="form-group">
+       <label for = "rating">Enter Movie Rating</label>
+       <input type = "text" ng-model ="moviedetails.rating" id ="rating" class="form-control"/>
+    </div>
+
+    <div class="form-group">
+       <input type="submit" class="btn btn-primary" value="Add Movie"/>
+    </div>  
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</div>  

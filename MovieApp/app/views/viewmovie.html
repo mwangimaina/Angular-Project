@@ -1,0 +1,18 @@
+<div class="jumbotron">
+  <h1>{{moviedetails.title}}</h1>
+  <p class="lead">
+    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
+      {{moviedetails.year_of_release}}
+  </p>
+
+ 
+   User Rating: {{moviedetails.rating}}
+
+   ID: {{moviedetails._id}}
+
+    
+    <a class="btn btn-primary" ng-href="#/editMovie/{{moviedetails._id}}">Update Movie</a> 
+
+
+</div>
+
